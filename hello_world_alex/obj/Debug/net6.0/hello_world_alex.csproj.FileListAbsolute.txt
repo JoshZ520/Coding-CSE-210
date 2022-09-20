@@ -1,0 +1,15 @@
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\bin\Debug\net6.0\hello_world_alex.exe
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\bin\Debug\net6.0\hello_world_alex.deps.json
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\bin\Debug\net6.0\hello_world_alex.runtimeconfig.json
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\bin\Debug\net6.0\hello_world_alex.dll
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\bin\Debug\net6.0\hello_world_alex.pdb
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\obj\Debug\net6.0\hello_world_alex.csproj.AssemblyReference.cache
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\obj\Debug\net6.0\hello_world_alex.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\obj\Debug\net6.0\hello_world_alex.AssemblyInfoInputs.cache
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\obj\Debug\net6.0\hello_world_alex.AssemblyInfo.cs
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\obj\Debug\net6.0\hello_world_alex.csproj.CoreCompileInputs.cache
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\obj\Debug\net6.0\hello_world_alex.dll
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\obj\Debug\net6.0\refint\hello_world_alex.dll
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\obj\Debug\net6.0\hello_world_alex.pdb
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\obj\Debug\net6.0\hello_world_alex.genruntimeconfig.cache
+C:\Users\Alex Peterson\git\Coding-CSE-210\hello_world_alex\obj\Debug\net6.0\ref\hello_world_alex.dll
