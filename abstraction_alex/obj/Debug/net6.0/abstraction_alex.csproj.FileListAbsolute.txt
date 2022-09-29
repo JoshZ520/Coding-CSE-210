@@ -1,0 +1,15 @@
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\bin\Debug\net6.0\abstraction_alex.exe
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\bin\Debug\net6.0\abstraction_alex.deps.json
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\bin\Debug\net6.0\abstraction_alex.runtimeconfig.json
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\bin\Debug\net6.0\abstraction_alex.dll
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\bin\Debug\net6.0\abstraction_alex.pdb
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\obj\Debug\net6.0\abstraction_alex.csproj.AssemblyReference.cache
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\obj\Debug\net6.0\abstraction_alex.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\obj\Debug\net6.0\abstraction_alex.AssemblyInfoInputs.cache
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\obj\Debug\net6.0\abstraction_alex.AssemblyInfo.cs
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\obj\Debug\net6.0\abstraction_alex.csproj.CoreCompileInputs.cache
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\obj\Debug\net6.0\abstraction_alex.dll
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\obj\Debug\net6.0\refint\abstraction_alex.dll
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\obj\Debug\net6.0\abstraction_alex.pdb
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\obj\Debug\net6.0\abstraction_alex.genruntimeconfig.cache
+C:\Users\Alex Peterson\git\Coding-CSE-210\abstraction_alex\obj\Debug\net6.0\ref\abstraction_alex.dll
