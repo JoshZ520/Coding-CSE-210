@@ -4,26 +4,27 @@
 
     Deck deck = new Deck();
     
-    Card card = deck.DrawCard();
 
     int score = 300;
 
+    Card card = deck.DrawCard();
+    Card nextCard = deck.DrawCard();
     Console.WriteLine($"the card is: {card}");
 
     Console.Write("Higher or Lower? (h/l): ");
     string? playerGuess = Console.ReadLine();
-    
+    bool isRight = CheckGuess(playerGuess, card, nextCard);
+
     score = GetPoints(score, isRight);
     Console.WriteLine($"Your score is: {score}");
-    
+
     Console.Write("Play Again? (y/n): ");
     string? playAgain = Console.ReadLine();
     
  } 
 
-static bool GuessRight(string playerGuess, int card) {
-    if (playerGuess) {
-    }
+static bool CheckGuess(string? playerGuess, Card card, Card nextCard) {
+    
     return true;
 }
 static int GetPoints(int currentPoints, bool isRight) {
