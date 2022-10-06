@@ -12,8 +12,7 @@ class Deck {
         }
     }
 
-// Method to pick a rand card from the deck that is different than
-// the previous
+// Method to pick a rand card from the deck
     public Card DrawCard() {
         Random rnd = new Random();
         Card card = cards[rnd.Next(13) - 1];
