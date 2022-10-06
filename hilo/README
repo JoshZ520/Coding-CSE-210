@@ -1,0 +1,5 @@
+This project is a way to play the card game Hilo. The game is played as a card is drawn from the deck and the value of the card is shown to the player. The player then guesses if the next card drawn will be higher or lower than the card shown. If the guess was correct, 100 points are added to the total score. If not, then 75 points are subtracted. Each player will start with 300 points, and the game is played until the player decides to stop or reaches 0 points or less.
+
+To play using this specific program, the card will be shown you as a number 1-13. You can then enter either "h" for higher or "l" for lower. The next card and your current score will then be shown to you along with the option to conintue. If you would like to continue, enter "y" when prompted. Otherwise, enter "n". The score will be calculated automatically, and if zero points are reached, the game will end.
+
+Enjoy!
