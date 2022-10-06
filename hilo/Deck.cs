@@ -8,7 +8,8 @@ class Deck {
     public Deck() {
         for (int i = 1; i <= 13; i++)
         {
-            cards.Add(new Card(i.ToString()));
+            cards.Add(new Card(i));
+            
         }
     }
 

@@ -21,7 +21,9 @@
     
  } 
 
-static bool GuessRight(string playerGuess, string card) {
+static bool GuessRight(string playerGuess, int card) {
+    if (playerGuess) {
+    }
     return true;
 }
 static int GetPoints(int currentPoints, bool isRight) {
