@@ -14,10 +14,11 @@ class Deck {
     }
 
 // Method to pick a rand card from the deck
-    public Card DrawCard() {
+    public int DrawCard() {
         Random rnd = new Random();
-        Card card = cards[rnd.Next(13) - 1];
-        return card;
+        Card card = cards[rnd.Next(13)];
+        int number = card.card;
+        return number;
     }
 
 }
