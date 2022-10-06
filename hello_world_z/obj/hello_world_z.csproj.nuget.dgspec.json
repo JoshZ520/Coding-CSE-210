@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joshu\\GitHub\\Coding-CSE-210\\hello_world_z\\hello_world_z.csproj": {}
+    "C:\\Users\\joshu\\Git\\Coding-CSE-210\\hello_world_z\\hello_world_z.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joshu\\GitHub\\Coding-CSE-210\\hello_world_z\\hello_world_z.csproj": {
+    "C:\\Users\\joshu\\Git\\Coding-CSE-210\\hello_world_z\\hello_world_z.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joshu\\GitHub\\Coding-CSE-210\\hello_world_z\\hello_world_z.csproj",
+        "projectUniqueName": "C:\\Users\\joshu\\Git\\Coding-CSE-210\\hello_world_z\\hello_world_z.csproj",
         "projectName": "hello_world_z",
-        "projectPath": "C:\\Users\\joshu\\GitHub\\Coding-CSE-210\\hello_world_z\\hello_world_z.csproj",
+        "projectPath": "C:\\Users\\joshu\\Git\\Coding-CSE-210\\hello_world_z\\hello_world_z.csproj",
         "packagesPath": "C:\\Users\\joshu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joshu\\GitHub\\Coding-CSE-210\\hello_world_z\\obj\\",
+        "outputPath": "C:\\Users\\joshu\\Git\\Coding-CSE-210\\hello_world_z\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joshu\\AppData\\Roaming\\NuGet\\NuGet.Config"
