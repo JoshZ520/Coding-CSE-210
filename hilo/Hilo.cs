@@ -24,7 +24,7 @@
  } 
 
 static bool CheckGuess(string? playerGuess, Card card, Card nextCard) {
-    
+    if (card )
     return true;
 }
 static int GetPoints(int currentPoints, bool isRight) {
