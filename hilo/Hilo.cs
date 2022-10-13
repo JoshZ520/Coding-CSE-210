@@ -11,9 +11,9 @@
     while (cont) {
         int card = deck.DrawCard();
         int nextCard = deck.DrawCard();
-        Console.WriteLine($"the card is: {card}");
+        Console.WriteLine($"The card is: {card}");
 
-        Console.Write("Higher or Lower? (h/l): ");
+        Console.Write("Do you think the next card will be Higher or Lower? (h/l): ");
         string? playerGuess = Console.ReadLine();
 
         if (card == nextCard) {
@@ -68,6 +68,7 @@ static bool PlayAgain(string? cont) {
         return true;
     }
     else {
+        Console.WriteLine("Hope you have had fun with the game!");
         return false;
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alex Peterson\\git\\Coding-CSE-210\\hilo\\hilo.csproj": {}
+    "C:\\Users\\joshu\\Git\\Coding-CSE-210\\hilo\\hilo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alex Peterson\\git\\Coding-CSE-210\\hilo\\hilo.csproj": {
+    "C:\\Users\\joshu\\Git\\Coding-CSE-210\\hilo\\hilo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alex Peterson\\git\\Coding-CSE-210\\hilo\\hilo.csproj",
+        "projectUniqueName": "C:\\Users\\joshu\\Git\\Coding-CSE-210\\hilo\\hilo.csproj",
         "projectName": "hilo",
-        "projectPath": "C:\\Users\\Alex Peterson\\git\\Coding-CSE-210\\hilo\\hilo.csproj",
-        "packagesPath": "C:\\Users\\Alex Peterson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alex Peterson\\git\\Coding-CSE-210\\hilo\\obj\\",
+        "projectPath": "C:\\Users\\joshu\\Git\\Coding-CSE-210\\hilo\\hilo.csproj",
+        "packagesPath": "C:\\Users\\joshu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joshu\\Git\\Coding-CSE-210\\hilo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alex Peterson\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\joshu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
