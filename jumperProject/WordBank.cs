@@ -3,7 +3,10 @@ class WordBank {
 
     public string GetWord() {
         Random rnd = new Random();
+        int index = rnd.Next(words.Count);
+        string word = words[index];
 
+        return word;
     }
 
 }
