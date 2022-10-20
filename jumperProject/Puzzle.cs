@@ -24,7 +24,7 @@ class Puzzle {
 
     public List<string> Hide(string puz) {
         List<string> blanks = new List<string> {};
-        foreach (char l in puz) {
+        foreach (char letter in puz) {
             blanks.Add("_");
         }
 
