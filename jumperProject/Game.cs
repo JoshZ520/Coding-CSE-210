@@ -23,6 +23,12 @@
             bool isright = puzzle.CheckLetter(guess);
 
             puzzle.ShowLetter(isright, guess);
+            
+            if (isright == true) {
+                bool iswrong = false;
+                parachute.RemoveLine(iswrong);
+            }
+            
         }
     }
 

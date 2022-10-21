@@ -7,11 +7,12 @@ class Parachute {
     }
 
     public void RemoveLine( bool isWrong) {
+        if (isWrong == false) {
+            this.Chute.Remove(this.Chute[0]);
+        }
         if (this.Chute.Count == 5) {
             this.Chute[0] = "   x";
         }
-        else if (isWrong) {
-            this.Chute.Remove(this.Chute[0]);
-        }
+        
     }
 }
