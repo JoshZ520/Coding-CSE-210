@@ -1,10 +1,10 @@
 class Puzzle {
 
-    public string? newWord;
+    private string newWord;
     public Puzzle() {
         WordBank listOfWords = new WordBank();
 
-        string newWord = listOfWords.GetWord();
+        newWord = listOfWords.GetWord();
     }
 
     public string GetNewPuzzle() {
@@ -22,15 +22,24 @@ class Puzzle {
         }
     }
 
-    public List<string> Hide(string puz) {
+    public bool CheckLetter(string guess) {
+        foreach (char l in this.newWord) {
+            if (l.ToString() == guess) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public List<string> Hide() {
         List<string> blanks = new List<string> {};
-        foreach (char l in puz) {
+        foreach (char l in this.newWord) { 
             blanks.Add("_");
         }
 
         return blanks;
     }
-
     public List<string> ShowLetter(bool isRight, string guess, int place, List<string> blanks) {
         if (isRight) {
             int index = place - 1;
