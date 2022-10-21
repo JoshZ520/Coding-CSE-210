@@ -1,11 +1,25 @@
 class Puzzle {
 
-    private string newWord;
+    // attribute representing the word that is currently being used as the puzzle
+    private string currentWord;
+
+    // attribute represting the current word, but as a list of "blanks" (underscores) 
+    // to be replaced as letters are guessed
+    private List<string> blanks = new List<string> {};
     public Puzzle() {
         WordBank listOfWords = new WordBank();
 
-        newWord = listOfWords.GetWord();
+        currentWord = listOfWords.GetWord();
     }
+
+    public string GetCurrentWord() {
+        return this.currentWord;
+    }
+
+    // public List<string> GetWordList() {
+    //     List<string> wordList = this.currentWord.Split();
+    //     return wordList;
+    // }
 
     public string GetNewPuzzle() {
         WordBank listOfwords1 = new WordBank();
@@ -23,7 +37,7 @@ class Puzzle {
     }
 
     public bool CheckLetter(string guess) {
-        foreach (char l in this.newWord) {
+        foreach (char l in this.currentWord) {
             if (l.ToString() == guess) {
                 return true;
             }
@@ -32,23 +46,33 @@ class Puzzle {
         return false;
     }
 
-    public List<string> Hide() {
-        List<string> blanks = new List<string> {};
-        foreach (char l in this.newWord) { 
+    public void Hide() {
+        foreach (char l in this.currentWord) { 
             blanks.Add("_");
         }
-
-        return blanks;
     }
-    public List<string> ShowLetter(bool isRight, string guess, int place, List<string> blanks) {
+    public List<string> ShowLetter(bool isRight, string guess) {
         if (isRight) {
-            int index = place - 1;
-            blanks[index] = guess;
-            return blanks;
+            int index = 0;
+            foreach (char l in this.currentWord) {
+                if (l.ToString() == guess) {
+                    int letterIndex = index;
+                    this.blanks[letterIndex] = guess;
+                }
+                index += 1;
+            }
+            return this.blanks;
         }
         else {
-            return blanks;
+            return this.blanks;
         }
+    }
+
+    public void ShowCurrentWord() {
+        foreach (string letter in this.blanks) {
+            Console.Write(letter);
+        }
+        Console.WriteLine();
     }
 
 }

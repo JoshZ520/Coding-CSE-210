@@ -1,5 +1,5 @@
 class Parachute {
-    List<string> Chute = new List<string> {"  ___", "/ ___ \\", "\\    /", " \\  /","   O", "  /|\\", "  / \\ ", "       ", "^^^^^^^"   };
+    List<string> Chute = new List<string> {"  ___", "/ ___ \\", "\\     /", " \\   /","   O", "  /|\\", "  / \\ ", "       ", "^^^^^^^"   };
     public void DisplayBoard() {
         foreach (string line in Chute) {
             Console.WriteLine(line);

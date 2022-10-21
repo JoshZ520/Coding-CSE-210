@@ -1,7 +1,7 @@
 class Player {
-    public string? GetGuess() {
-        Console.WriteLine("Guess a letter: ");
-        string? guess = Console.ReadLine();
+    public string GetGuess() {
+        Console.Write("Guess a letter: ");
+        string guess = Console.ReadLine() ?? "";
         return guess;
     }
 
