@@ -396,3 +396,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+hello_world_z/obj/Debug/net6.0/hello_world_z.assets.cache
+hello_world_z/obj/Debug/net6.0/hello_world_z.GeneratedMSBuildEditorConfig.editorconfig
