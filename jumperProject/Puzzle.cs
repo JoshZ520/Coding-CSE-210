@@ -4,7 +4,7 @@ class Puzzle {
     private string currentWord;
 
     // attribute represting the current word, but as a list of "blanks" (underscores) 
-    // to be replaced as letters are guessed
+    // to be replaced as letters are guessed. See the Hide() method.
     private List<string> blanks = new List<string> {};
     public Puzzle() {
         WordBank listOfWords = new WordBank();
@@ -75,4 +75,14 @@ class Puzzle {
         Console.WriteLine();
     }
 
+
+    public bool CheckWinner() {
+        string wordList = string.Join("", this.blanks);
+        if (wordList == this.currentWord) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
