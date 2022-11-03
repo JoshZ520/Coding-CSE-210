@@ -1,3 +1,7 @@
 class MovingObj {
-    int speed = 4;
+    public int Size { get; set; }
+    public MovingObj(int size) {
+
+        Size = 5;
+    }
 }
