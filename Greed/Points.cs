@@ -21,3 +21,9 @@ class Points {
 ;
     }
 }
+
+class Scoreboard {
+    public void DisplayScore(Points score) {
+        score.DisplayPoints();
+    }
+}
