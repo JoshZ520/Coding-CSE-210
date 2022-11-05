@@ -41,4 +41,7 @@ class MovingObj {
     //     BallPosition.Y  += BallMovementSpeed;
     // }
 
+    virtual public void Draw() {
+        
+    }
 }
