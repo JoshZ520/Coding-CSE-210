@@ -5,4 +5,7 @@ class MovingObj {
 
         Size = size;
     }
+    virtual public void Draw() {
+        
+    }
 }
