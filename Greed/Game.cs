@@ -1,4 +1,5 @@
 using Raylib_cs;
+using System.Numerics;
 
 class Game {
     public void PlayGame() {
@@ -16,6 +17,22 @@ class Game {
         
         while (!Raylib.WindowShouldClose())
             {
+
+                var whichType = Random.Next(2);
+
+
+                var randomY = Random.Next(-2, 2);
+                var randomX = Random.Next(-2, 2);
+
+
+
+                switch (whichType) {
+                    case 0:
+                        var Rock = new Rocks(Color.BLUE)
+                        break;
+                    case 1:
+                        break;
+                } 
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(Color.WHITE);
 
