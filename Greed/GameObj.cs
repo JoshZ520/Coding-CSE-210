@@ -12,6 +12,10 @@ class Player: MovingObj {
 
         return startPoint;
     }
+    public override void Draw()
+    {
+        Raylib.DrawText("#", /*middle*/ -400,/*bottom of screen*/ -400, 5, Color.WHITE);
+    }
 }
 
 class Gems: MovingObj {
