@@ -2,7 +2,7 @@ using Raylib_cs;
 
 
 class Player: MovingObj {
-    
+    int size = 5;
 }
 
 class Gems: MovingObj {
