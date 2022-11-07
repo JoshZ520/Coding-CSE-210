@@ -38,6 +38,10 @@ public class Game {
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(Color.WHITE);
 
+                foreach (var obj in rocks) {
+                    obj.Draw();
+                }
+
 
 
                 Raylib.EndDrawing();
