@@ -17,6 +17,7 @@ public class Game {
         Player player = new Player(Color.BLACK, 5);
         player.Position = player.GetStartPos(ScreenHeight, ScreenWidth);
 
+
         Raylib.InitWindow(ScreenHeight, ScreenWidth, "Greed");
         Raylib.SetTargetFPS(60);
         
@@ -39,7 +40,7 @@ public class Game {
                         Objects.Add(Rock);
                         break;
                     case 1:
-                        var Gem = new Gems(Color.PURPLE, 5);
+                        var Gem = new Gems(Color.PURPLE, 25);
                         Gem.Position = position;
                         Objects.Add(Gem);
                         break;
@@ -52,6 +53,8 @@ public class Game {
                 }
 
                 player.Draw();
+
+                
 
                 Raylib.EndDrawing();
 

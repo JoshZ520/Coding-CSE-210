@@ -38,7 +38,7 @@ class Rocks: MovingObj {
         Radius = radius;
     }
     override public void Draw() {
-        Raylib.DrawCircle(3, 4, 0, this.Color);
+        Raylib.DrawCircle((int)Position.X, (int)Position.Y, Radius, this.Color);
     }
     
 }

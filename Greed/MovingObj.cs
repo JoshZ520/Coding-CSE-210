@@ -10,7 +10,7 @@ class MovingObj {
 
     public int Size { get; set; }
     public int Speed { get; set; }
-    public MovingObj(int size = 1, int speed = 1) {
+    public MovingObj(int size = 10, int speed = 1) {
 
         Size = size;
         Speed = speed;
