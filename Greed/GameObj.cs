@@ -14,7 +14,7 @@ class Player: MovingObj {
     }
     public override void Draw()
     {
-        Raylib.DrawText("#", /*middle*/ -400,/*bottom of screen*/ -400, 5, Color.WHITE);
+        Raylib.DrawText("#", /*middle*/ -400,/*bottom of screen*/ -400, size, Color.WHITE);
     }
 }
 

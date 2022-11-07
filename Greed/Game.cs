@@ -1,7 +1,7 @@
 using Raylib_cs;
 using System.Numerics;
 
-class Game {
+public class Game {
     public void PlayGame() {
         Player player = new Player();
 
@@ -12,6 +12,8 @@ class Game {
         var ScreenHeight = 800;
         var ScreenWidth = 480;
 
+        var Random = new Random();
+
         Raylib.InitWindow(ScreenHeight, ScreenWidth, "Greed");
         Raylib.SetTargetFPS(60);
         
@@ -19,7 +21,6 @@ class Game {
             {
 
                 var whichType = Random.Next(2);
-
 
                 var randomY = Random.Next(-2, 2);
                 var randomX = Random.Next(-2, 2);

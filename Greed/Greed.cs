@@ -1,7 +1,7 @@
 ﻿using Raylib_cs;
 
 
-class Greed {
+static class Greed {
     public static void Main(string[] args) {
         
     }

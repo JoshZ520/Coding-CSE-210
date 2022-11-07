@@ -15,6 +15,12 @@ class MovingObj {
         Size = size;
         Speed = speed;
     }
+    public void Move() {
+        Vector2 NewPosition = Position;
+        NewPosition.X += Velocity.X;
+        NewPosition.Y += Velocity.Y;
+        Position = NewPosition;
+    }
 
 
     public Color Color { get; set; }
