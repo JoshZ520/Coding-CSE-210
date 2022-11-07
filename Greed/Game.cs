@@ -3,7 +3,7 @@ using System.Numerics;
 
 public class Game {
     public void PlayGame() {
-        Player player = new Player();
+        
 
         List<Rocks> rocks = new List<Rocks> {};
 
@@ -12,7 +12,10 @@ public class Game {
         var ScreenHeight = 800;
         var ScreenWidth = 480;
         var Objects = new List<MovingObj>();
-        var Random = new Random();
+        var Rdm = new Random();
+
+        Player player = new Player(Color.BLACK, 5);
+        player.Position = player.GetStartPos(ScreenHeight, ScreenWidth);
 
         Raylib.InitWindow(ScreenHeight, ScreenWidth, "Greed");
         Raylib.SetTargetFPS(60);
@@ -20,23 +23,24 @@ public class Game {
         while (!Raylib.WindowShouldClose())
             {
 
-                var whichType = Random.Next(2);
+                var whichType = Rdm.Next(2);
 
-                var randomY = Random.Next(-2, 2);
-                var randomX = Random.Next(-2, 2);
 
-                var position = new Vector2(ScreenWidth / 2, ScreenHeight);
+                var randomY = Rdm.Next(-2, 2);
+                var randomX = Rdm.Next(-2, 2);
+
+                var position = new Vector2(ScreenWidth / 2, 0);
 
 
                 switch (whichType) {
                     case 0:
-                        var Rock = new Rocks(Color.BLUE, 5);
-                        rocks.Position = position;
+                        var Rock = new Rocks(Color.BLUE, 10);
+                        Rock.Position = position;
                         Objects.Add(Rock);
                         break;
                     case 1:
                         var Gem = new Gems(Color.PURPLE, 5);
-                        gems.Position = position;
+                        Gem.Position = position;
                         Objects.Add(Gem);
                         break;
                 } 
@@ -47,9 +51,13 @@ public class Game {
                     obj.Draw();
                 }
 
-
+                player.Draw();
 
                 Raylib.EndDrawing();
+
+                foreach (var obj in Objects) {
+                    obj.Move();
+                }
             }
 
     }

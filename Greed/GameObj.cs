@@ -1,22 +1,22 @@
 using Raylib_cs;
-
+using System.Numerics;
 
 class Player: MovingObj {
-    public Player(Color color, int size) {
+    public Player(Color color, int size): base(color) {
         Size = size;
     }
 
-    public List<float> GetStartPos(int ScreenWidth) {
+    public Vector2 GetStartPos(int ScreenWidth, int ScreenHeight) {
         float x_pos = ScreenWidth / 2;
-        float y_pos = 5;
+        float y_pos = ScreenHeight - 20;
 
         List<float> startPoint = new List<float> {x_pos, y_pos};
 
-        return startPoint;
+        return new Vector2(x_pos, y_pos);
     }
     public override void Draw()
     {
-        Raylib.DrawText("#", /*middle*/ -400,/*bottom of screen*/ -400, Size, Color.WHITE);
+        Raylib.DrawText("#", (int)Position.X, (int)Position.Y, Size, this.Color);
     }
 }
 
@@ -27,7 +27,7 @@ class Gems: MovingObj {
     }
     public override void Draw()
     {
-        Raylib.DrawText("*", randomX, randomY, 5, Color.WHITE);
+        Raylib.DrawText("*", (int)Position.X, (int)Position.Y, Size, this.Color);
     }
 }
 
@@ -38,7 +38,7 @@ class Rocks: MovingObj {
         Radius = radius;
     }
     override public void Draw() {
-        Raylib.DrawCircle(3, 4, 0, Color.BLUE);
+        Raylib.DrawCircle(3, 4, 0, this.Color);
     }
     
 }

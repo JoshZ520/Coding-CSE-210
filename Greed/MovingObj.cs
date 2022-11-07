@@ -6,7 +6,7 @@ class MovingObj {
     
 
     public Vector2 Position { get; set; } = new Vector2(0, 0);
-    public Vector2 Velocity { get; set; } = new Vector2(0, 0);
+    public Vector2 Velocity { get; set; } = new Vector2(0, 1);
 
     public int Size { get; set; }
     public int Speed { get; set; }
