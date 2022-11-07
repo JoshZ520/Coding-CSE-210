@@ -28,9 +28,10 @@ class Game {
 
                 switch (whichType) {
                     case 0:
-                        var Rock = new Rocks(Color.BLUE)
+                        var Rock = new Rocks(Color.BLUE);
                         break;
                     case 1:
+                        var Gem = new Gems(Color.PURPLE);
                         break;
                 } 
                 Raylib.BeginDrawing();

@@ -1,5 +1,13 @@
+using Raylib_cs;
+using System.Numerics;
+
+
 class MovingObj {
     
+
+    public Vector2 Position { get; set; } = new Vector2(0, 0);
+    public Vector2 Velocity { get; set; } = new Vector2(0, 0);
+
     public int Size { get; set; }
     public int Speed { get; set; }
     public MovingObj(int size = 1, int speed = 1) {
@@ -8,6 +16,12 @@ class MovingObj {
         Speed = speed;
     }
 
+
+    public Color Color { get; set; }
+
+    public MovingObj(Color color) {
+        Color = color;
+    }
 
     public void MoveUp() {
         

@@ -21,7 +21,7 @@ class Player: MovingObj {
 class Gems: MovingObj {
     public override void Draw()
     {
-        Raylib.DrawText("*", RandomX, RandomY, 5, Color.WHITE);
+        Raylib.DrawText("*", randomX, randomY, 5, Color.WHITE);
     }
 }
 
