@@ -11,7 +11,7 @@ public class Game {
 
         var ScreenHeight = 800;
         var ScreenWidth = 480;
-
+        var Objects = new List<MovingObj>();
         var Random = new Random();
 
         Raylib.InitWindow(ScreenHeight, ScreenWidth, "Greed");
@@ -25,20 +25,25 @@ public class Game {
                 var randomY = Random.Next(-2, 2);
                 var randomX = Random.Next(-2, 2);
 
+                var position = new Vector2(ScreenWidth / 2, ScreenHeight);
 
 
                 switch (whichType) {
                     case 0:
-                        var Rock = new Rocks(Color.BLUE);
+                        var Rock = new Rocks(Color.BLUE, 5);
+                        rocks.Position = position;
+                        Objects.Add(Rock);
                         break;
                     case 1:
-                        var Gem = new Gems(Color.PURPLE);
+                        var Gem = new Gems(Color.PURPLE, 5);
+                        gems.Position = position;
+                        Objects.Add(Gem);
                         break;
                 } 
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(Color.WHITE);
 
-                foreach (var obj in rocks) {
+                foreach (var obj in Objects) {
                     obj.Draw();
                 }
 
