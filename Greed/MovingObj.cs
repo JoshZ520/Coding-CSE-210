@@ -22,7 +22,8 @@ class MovingObj {
         Position = NewPosition;
     }
 
-
+    Random Rposition = new Random();
+    
     public Color Color { get; set; }
 
     public MovingObj(Color color) {
