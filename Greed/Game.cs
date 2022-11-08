@@ -27,21 +27,24 @@ public class Game {
                 var whichType = Rdm.Next(2);
 
 
-                var randomY = Rdm.Next(-2, 2);
-                var randomX = Rdm.Next(-2, 2);
+                var randomY = Rdm.Next(2);
+                var randomX = Rdm.Next(2);
 
-                var position = new Vector2(ScreenWidth / 2, 0);
+                var position = new Vector2(ScreenWidth, 0);
+                var randomPos = new Vector2((int)ScreenWidth);
 
 
                 switch (whichType) {
                     case 0:
                         var Rock = new Rocks(Color.BLUE, 10);
-                        Rock.Position = position;
+                        Rock.Position = randomPos;
+                        Rock.Velocity = new Vector2(0, 1);
                         Objects.Add(Rock);
                         break;
                     case 1:
                         var Gem = new Gems(Color.PURPLE, 25);
                         Gem.Position = position;
+                        Gem.Velocity = new Vector2(0, randomY);
                         Objects.Add(Gem);
                         break;
                 } 
