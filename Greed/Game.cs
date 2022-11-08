@@ -23,7 +23,10 @@ public class Game {
         
         while (!Raylib.WindowShouldClose())
             {
-
+                int count = 0; 
+                while (count != 300) {
+                count += 1;
+                }
                 var whichType = Rdm.Next(2);
 
 
@@ -31,23 +34,28 @@ public class Game {
                 var randomX = Rdm.Next(2);
 
                 var position = new Vector2(ScreenWidth, 0);
-                var randomPos = new Vector2((int)ScreenWidth);
+                var randomPos = new Vector2((int)ScreenWidth, randomY);
 
+                
+                if (count == 300) {
 
-                switch (whichType) {
-                    case 0:
-                        var Rock = new Rocks(Color.BLUE, 10);
-                        Rock.Position = randomPos;
-                        Rock.Velocity = new Vector2(0, 1);
-                        Objects.Add(Rock);
-                        break;
-                    case 1:
-                        var Gem = new Gems(Color.PURPLE, 25);
-                        Gem.Position = position;
-                        Gem.Velocity = new Vector2(0, randomY);
-                        Objects.Add(Gem);
-                        break;
-                } 
+                    switch (whichType) {
+                        case 0:
+                            var Rock = new Rocks(Color.BLUE, 10);
+                            Rock.Position = randomPos;
+                            Rock.Velocity = new Vector2(0, 1);
+                            Objects.Add(Rock);
+                            count = 0;
+                            break;
+                        case 1:
+                            var Gem = new Gems(Color.PURPLE, 25);
+                            Gem.Position = position;
+                            Gem.Velocity = new Vector2(0, randomY);
+                            Objects.Add(Gem);
+                            count = 0;
+                            break;
+                    } 
+                }
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(Color.WHITE);
 
@@ -64,6 +72,7 @@ public class Game {
                 foreach (var obj in Objects) {
                     obj.Move();
                 }
+                
             }
 
     }
