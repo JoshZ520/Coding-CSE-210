@@ -9,53 +9,50 @@ public class Game {
 
         List<Gems> gems = new List<Gems> {};
 
-        var ScreenHeight = 800;
-        var ScreenWidth = 480;
+        var ScreenHeight = 480;
+        var ScreenWidth = 800;
         var Objects = new List<MovingObj>();
         var Rdm = new Random();
 
+        
         Player player = new Player(Color.BLACK, 5);
-        player.Position = player.GetStartPos(ScreenHeight, ScreenWidth);
+        player.Position = player.GetStartPos(ScreenWidth, ScreenHeight);
 
 
-        Raylib.InitWindow(ScreenHeight, ScreenWidth, "Greed");
+        Raylib.InitWindow(ScreenWidth, ScreenHeight, "Greed");
         Raylib.SetTargetFPS(60);
         
         while (!Raylib.WindowShouldClose())
             {
-                int count = 0; 
-                while (count != 300) {
-                count += 1;
-                }
-                var whichType = Rdm.Next(2);
+                
+                var whichType = Rdm.Next(100);
 
+                var Xstart = Rdm.Next(ScreenWidth);
 
                 var randomY = Rdm.Next(2);
                 var randomX = Rdm.Next(2);
 
-                var position = new Vector2(ScreenWidth, 0);
-                var randomPos = new Vector2((int)ScreenWidth, randomY);
-
+                var position = new Vector2(Xstart, 0);
+            
                 
-                if (count == 300) {
 
-                    switch (whichType) {
-                        case 0:
-                            var Rock = new Rocks(Color.BLUE, 10);
-                            Rock.Position = randomPos;
-                            Rock.Velocity = new Vector2(0, 1);
-                            Objects.Add(Rock);
-                            count = 0;
-                            break;
-                        case 1:
-                            var Gem = new Gems(Color.PURPLE, 25);
-                            Gem.Position = position;
-                            Gem.Velocity = new Vector2(0, randomY);
-                            Objects.Add(Gem);
-                            count = 0;
-                            break;
+                switch (whichType) {
+                    case 0:
+                        var Rock = new Rocks(Color.BLUE, 10);
+                        Rock.Position = position;
+                        Rock.Velocity = new Vector2(0, 1);
+                        Objects.Add(Rock);
+                        break;
+                    case 1:
+                        var Gem = new Gems(Color.PURPLE, 25);
+                        Gem.Position = position;
+                        Gem.Velocity = new Vector2(0, 1);
+                        Objects.Add(Gem);
+                        break;
+                    default:
+                        break;
                     } 
-                }
+                
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(Color.WHITE);
 
