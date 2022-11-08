@@ -18,7 +18,9 @@ public class Game {
         Player player = new Player(Color.BLACK, 5);
         player.Position = player.GetStartPos(ScreenWidth, ScreenHeight);
 
+        Scoreboard scoreboard = new Scoreboard();
         
+        Points point = new Points();
 
         Raylib.InitWindow(ScreenWidth, ScreenHeight, "Greed");
         Raylib.SetTargetFPS(60);
@@ -74,7 +76,7 @@ public class Game {
                 }
 
                 player.Draw();
-
+                scoreboard.DisplayScore(point);
                 
 
                 Raylib.EndDrawing();
