@@ -17,7 +17,7 @@ class Points {
     }
 
     public void DisplayPoints() {
-        Raylib.DrawText("Move the ball with the arrow keys!", 12, 12, 20, Color.BLACK);
+        Raylib.DrawText($"Score: {this.score}", 12, 12, 20, Color.BLACK);
 ;
     }
 }
