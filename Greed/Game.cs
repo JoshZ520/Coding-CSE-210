@@ -5,15 +5,15 @@ public class Game {
     public void PlayGame() {
         
 
-        List<Rocks> rocks = new List<Rocks> {};
+        // List<Rocks> rocks = new List<Rocks> {};
 
-        List<Gems> gems = new List<Gems> {};
+        // List<Gems> gems = new List<Gems> {};
 
         var ScreenHeight = 480;
         var ScreenWidth = 800;
         var Objects = new List<MovingObj>();
         var Rdm = new Random();
-
+        
         
         Player player = new Player(Color.BLACK, 5);
         player.Position = player.GetStartPos(ScreenWidth, ScreenHeight);
@@ -21,6 +21,8 @@ public class Game {
         Scoreboard scoreboard = new Scoreboard();
         
         Points point = new Points();
+
+        Keyboard key = new Keyboard();
 
         Raylib.InitWindow(ScreenWidth, ScreenHeight, "Greed");
         Raylib.SetTargetFPS(60);
@@ -41,7 +43,7 @@ public class Game {
 
                 switch (whichType) {
                     case 0:
-                        var Rock = new Rocks(Color.BLUE, 5);
+                        var Rock = new Rocks(Color.BROWN, 5);
                         Rock.Position = position;
                         Rock.Velocity = new Vector2(0, 1);
                         Objects.Add(Rock);
@@ -59,14 +61,14 @@ public class Game {
                         Objects.Add(Gem);
                         break;
                     case 3:
-                        var Gem2 = new Gems(Color.DARKPURPLE, 30);
+                        var Gem2 = new Gems(Color.BLUE, 30);
                         Gem2.Position = position;
                         Gem2.Velocity = new Vector2(0,1);
                         Objects.Add(Gem2);
                         break;
                     default:
                         break;
-                    } 
+                    }
                 
                 Raylib.BeginDrawing();
                 Raylib.ClearBackground(Color.WHITE);
@@ -75,8 +77,16 @@ public class Game {
                     obj.Draw();
                 }
 
+                if (Raylib.IsKeyDown(key.right)) {
+                    player.MoveRight();
+                }
+
+                if (Raylib.IsKeyDown(key.left)) {
+                    player.MoveLeft();
+                }
+
                 player.Draw();
-                scoreboard.DisplayScore(point);
+
                 
 
                 Raylib.EndDrawing();

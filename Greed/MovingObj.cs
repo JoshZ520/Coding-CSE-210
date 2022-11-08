@@ -36,10 +36,14 @@ class MovingObj {
 
     }
     public void MoveRight() {
-
+        Vector2 NewPosition = Position;
+        NewPosition.X += Velocity.X;
+        Position = NewPosition;
     }
     public void MoveLeft() {
-
+        Vector2 NewPosition = Position;
+        NewPosition.X -= Velocity.X;
+        Position = NewPosition;
     }
 
 
