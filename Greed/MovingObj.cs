@@ -5,7 +5,7 @@ using System.Numerics;
 class MovingObj {
     
 
-    public Vector2 Position { get; set; } = new Vector2(0, 0);
+    public Vector2 Position { get; set; } = new Vector2(0, 480);
     public Vector2 Velocity { get; set; } = new Vector2(0, 1);
 
     public int Size { get; set; }
@@ -22,7 +22,6 @@ class MovingObj {
         Position = NewPosition;
     }
 
-    Random Rposition = new Random();
     
     public Color Color { get; set; }
 
