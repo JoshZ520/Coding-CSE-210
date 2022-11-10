@@ -17,7 +17,7 @@ class Points {
     }
 
     public void DisplayPoints() {
-        Raylib.DrawText($"Score: {this.score}", 12, 12, 20, Color.BLACK);
+        Raylib.DrawText($"Score: {this.score}", 20, 20, 20, Color.BLACK);
 ;
     }
 }
