@@ -77,13 +77,13 @@ public class Game {
                     obj.Draw();
                 }
 
-                if (Raylib.IsKeyDown(key.right)) {
-                    player.MoveRight();
-                }
+                // if (Raylib.IsKeyDown(KeyboardKey.KEY_RIGHT)) {
+                //     player.X += velocity;
+                // }
 
-                if (Raylib.IsKeyDown(key.left)) {
-                    player.MoveLeft();
-                }
+                // if (Raylib.IsKeyDown(key.left)) {
+                //     player.MoveLeft();
+                // }
 
                 player.Draw();
 
