@@ -29,7 +29,8 @@ namespace Unit05
            
             // create the script
             Script script = new Script();
-            script.AddAction("input", new ControlActorsAction(keyboardService));
+            script.AddAction("input", new ControlPlayerOne(keyboardService));
+            script.AddAction("input", new ControlPlayerTwo(keyboardService));
             script.AddAction("update", new MoveActorsAction());
             script.AddAction("update", new HandleCollisionsAction());
             script.AddAction("output", new DrawActorsAction(videoService));

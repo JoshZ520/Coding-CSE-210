@@ -10,7 +10,7 @@ namespace Unit05.Game.Scripting
     /// The responsibility of ControlActorsAction is to get the direction and move the snake's head.
     /// </para>
     /// </summary>
-    public class ControlActorsAction : Action
+    public class ControlPlayerTwo : Action
     {
         private KeyboardService keyboardService;
         private Point direction = new Point(Constants.CELL_SIZE, 0);
@@ -18,7 +18,7 @@ namespace Unit05.Game.Scripting
         /// <summary>
         /// Constructs a new instance of ControlActorsAction using the given KeyboardService.
         /// </summary>
-        public ControlActorsAction(KeyboardService keyboardService)
+        public ControlPlayerTwo(KeyboardService keyboardService)
         {
             this.keyboardService = keyboardService;
         }
@@ -27,25 +27,25 @@ namespace Unit05.Game.Scripting
         public void Execute(Cast cast, Script script)
         {
             // left
-            if (keyboardService.IsKeyDown("a"))
+            if (keyboardService.IsKeyDown("j"))
             {
                 direction = new Point(-Constants.CELL_SIZE, 0);
             }
 
             // right
-            if (keyboardService.IsKeyDown("d"))
+            if (keyboardService.IsKeyDown("l"))
             {
                 direction = new Point(Constants.CELL_SIZE, 0);
             }
 
             // up
-            if (keyboardService.IsKeyDown("w"))
+            if (keyboardService.IsKeyDown("i"))
             {
                 direction = new Point(0, -Constants.CELL_SIZE);
             }
 
             // down
-            if (keyboardService.IsKeyDown("s"))
+            if (keyboardService.IsKeyDown("k"))
             {
                 direction = new Point(0, Constants.CELL_SIZE);
             }
