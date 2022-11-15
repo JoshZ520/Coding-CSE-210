@@ -13,7 +13,7 @@ public class Game {
         var ScreenWidth = 800;
         var Objects = new List<MovingObj>();
         var Rdm = new Random();
-        
+
         
         Player player = new Player(Color.BLACK, 5);
         player.Position = player.GetStartPos(ScreenWidth, ScreenHeight);
