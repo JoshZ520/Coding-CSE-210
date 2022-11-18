@@ -13,14 +13,13 @@ namespace Unit05.Game.Casting
     {
         private List<Actor> segments = new List<Actor>();
 
-        Color color;
 
         /// <summary>
         /// Constructs a new instance of a Snake.
         /// </summary>
         public Snake(Color color, Vector2 startingPosition )
         {
-            this.color = color;
+            SetColor(color);
             PrepareBody(startingPosition);
         }
 
