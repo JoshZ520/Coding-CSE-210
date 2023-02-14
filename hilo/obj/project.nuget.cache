@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "pg/0iBKKgYpPqpzAYHW4jovjkwiL5pVGyh9eKegYs5hO1NbYyHyVle4ELl4pHFoRPpmNvQqBgzTlLGfS7/PyGw==",
+  "dgSpecHash": "LEjwb3hhDUbz+iQpBoib9cdcuOvdZ4No2I6o0ro4sO1HWFtGPTaLuTcmS1G28ztyVenSYaht4Jk66ZhDdeo3Rw==",
   "success": true,
   "projectFilePath": "C:\\Users\\joshu\\Git\\Coding-CSE-210\\hilo\\hilo.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\joshu\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\joshu\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\joshu\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\joshu\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.12\\microsoft.netcore.app.host.win-x64.6.0.12.nupkg.sha512"
+  ],
   "logs": []
 }
